@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Film</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-item> Titre : {{ (results | async).title }} </ion-item>
+    <ion-item> Durée : {{ (results | async).duration }} </ion-item>
+    <ion-item> Résumé : {{ (results | async).description }} </ion-item>
+</ion-content>
